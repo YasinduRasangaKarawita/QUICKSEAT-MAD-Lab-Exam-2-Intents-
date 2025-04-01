@@ -27,10 +27,10 @@ com.example.madlabexam2.app-material-1.12.0-25 C:\Users\Yasindu Rasanga\.gradle\
 com.example.madlabexam2.app-lifecycle-viewmodel-savedstate-2.6.2-26 C:\Users\Yasindu Rasanga\.gradle\caches\8.10.2\transforms\f2e274971e3bea5b241e72c937ab302b\transformed\lifecycle-viewmodel-savedstate-2.6.2\res
 com.example.madlabexam2.app-drawerlayout-1.1.1-27 C:\Users\Yasindu Rasanga\.gradle\caches\8.10.2\transforms\f50a68e84d18b89d9e251307062ef6e7\transformed\drawerlayout-1.1.1\res
 com.example.madlabexam2.app-tracing-1.2.0-28 C:\Users\Yasindu Rasanga\.gradle\caches\8.10.2\transforms\fbee55af539392b29ba012ca8de26051\transformed\tracing-1.2.0\res
-com.example.madlabexam2.app-pngs-29 C:\Users\Yasindu Rasanga\Documents\AndroidStudioProjects\MAD Lab Exam 2\app\build\generated\res\pngs\debug
-com.example.madlabexam2.app-resValues-30 C:\Users\Yasindu Rasanga\Documents\AndroidStudioProjects\MAD Lab Exam 2\app\build\generated\res\resValues\debug
-com.example.madlabexam2.app-packageDebugResources-31 C:\Users\Yasindu Rasanga\Documents\AndroidStudioProjects\MAD Lab Exam 2\app\build\intermediates\incremental\debug\packageDebugResources\merged.dir
-com.example.madlabexam2.app-packageDebugResources-32 C:\Users\Yasindu Rasanga\Documents\AndroidStudioProjects\MAD Lab Exam 2\app\build\intermediates\incremental\debug\packageDebugResources\stripped.dir
-com.example.madlabexam2.app-debug-33 C:\Users\Yasindu Rasanga\Documents\AndroidStudioProjects\MAD Lab Exam 2\app\build\intermediates\merged_res\debug\mergeDebugResources
-com.example.madlabexam2.app-debug-34 C:\Users\Yasindu Rasanga\Documents\AndroidStudioProjects\MAD Lab Exam 2\app\src\debug\res
-com.example.madlabexam2.app-main-35 C:\Users\Yasindu Rasanga\Documents\AndroidStudioProjects\MAD Lab Exam 2\app\src\main\res
+com.example.madlabexam2.app-pngs-29 C:\Users\Yasindu Rasanga\Desktop\MAD Lab Exam 2\app\build\generated\res\pngs\debug
+com.example.madlabexam2.app-resValues-30 C:\Users\Yasindu Rasanga\Desktop\MAD Lab Exam 2\app\build\generated\res\resValues\debug
+com.example.madlabexam2.app-packageDebugResources-31 C:\Users\Yasindu Rasanga\Desktop\MAD Lab Exam 2\app\build\intermediates\incremental\debug\packageDebugResources\merged.dir
+com.example.madlabexam2.app-packageDebugResources-32 C:\Users\Yasindu Rasanga\Desktop\MAD Lab Exam 2\app\build\intermediates\incremental\debug\packageDebugResources\stripped.dir
+com.example.madlabexam2.app-debug-33 C:\Users\Yasindu Rasanga\Desktop\MAD Lab Exam 2\app\build\intermediates\merged_res\debug\mergeDebugResources
+com.example.madlabexam2.app-debug-34 C:\Users\Yasindu Rasanga\Desktop\MAD Lab Exam 2\app\src\debug\res
+com.example.madlabexam2.app-main-35 C:\Users\Yasindu Rasanga\Desktop\MAD Lab Exam 2\app\src\main\res

@@ -20,169 +20,169 @@
 15-->[androidx.core:core:1.15.0] C:\Users\Yasindu Rasanga\.gradle\caches\8.10.2\transforms\72a3f33b2df915a8f59492521e2c4bbf\transformed\core-1.15.0\AndroidManifest.xml:26:22-94
 16
 17    <application
-17-->C:\Users\Yasindu Rasanga\Documents\AndroidStudioProjects\MAD Lab Exam 2\app\src\main\AndroidManifest.xml:5:5-87:19
+17-->C:\Users\Yasindu Rasanga\Desktop\MAD Lab Exam 2\app\src\main\AndroidManifest.xml:5:5-87:19
 18        android:allowBackup="true"
-18-->C:\Users\Yasindu Rasanga\Documents\AndroidStudioProjects\MAD Lab Exam 2\app\src\main\AndroidManifest.xml:6:9-35
+18-->C:\Users\Yasindu Rasanga\Desktop\MAD Lab Exam 2\app\src\main\AndroidManifest.xml:6:9-35
 19        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
 19-->[androidx.core:core:1.15.0] C:\Users\Yasindu Rasanga\.gradle\caches\8.10.2\transforms\72a3f33b2df915a8f59492521e2c4bbf\transformed\core-1.15.0\AndroidManifest.xml:28:18-86
 20        android:dataExtractionRules="@xml/data_extraction_rules"
-20-->C:\Users\Yasindu Rasanga\Documents\AndroidStudioProjects\MAD Lab Exam 2\app\src\main\AndroidManifest.xml:7:9-65
+20-->C:\Users\Yasindu Rasanga\Desktop\MAD Lab Exam 2\app\src\main\AndroidManifest.xml:7:9-65
 21        android:debuggable="true"
 22        android:extractNativeLibs="false"
 23        android:fullBackupContent="@xml/backup_rules"
-23-->C:\Users\Yasindu Rasanga\Documents\AndroidStudioProjects\MAD Lab Exam 2\app\src\main\AndroidManifest.xml:8:9-54
+23-->C:\Users\Yasindu Rasanga\Desktop\MAD Lab Exam 2\app\src\main\AndroidManifest.xml:8:9-54
 24        android:icon="@mipmap/ic_launcher"
-24-->C:\Users\Yasindu Rasanga\Documents\AndroidStudioProjects\MAD Lab Exam 2\app\src\main\AndroidManifest.xml:9:9-43
+24-->C:\Users\Yasindu Rasanga\Desktop\MAD Lab Exam 2\app\src\main\AndroidManifest.xml:9:9-43
 25        android:label="@string/app_name"
-25-->C:\Users\Yasindu Rasanga\Documents\AndroidStudioProjects\MAD Lab Exam 2\app\src\main\AndroidManifest.xml:10:9-41
+25-->C:\Users\Yasindu Rasanga\Desktop\MAD Lab Exam 2\app\src\main\AndroidManifest.xml:10:9-41
 26        android:roundIcon="@mipmap/ic_launcher_round"
-26-->C:\Users\Yasindu Rasanga\Documents\AndroidStudioProjects\MAD Lab Exam 2\app\src\main\AndroidManifest.xml:11:9-54
+26-->C:\Users\Yasindu Rasanga\Desktop\MAD Lab Exam 2\app\src\main\AndroidManifest.xml:11:9-54
 27        android:supportsRtl="true"
-27-->C:\Users\Yasindu Rasanga\Documents\AndroidStudioProjects\MAD Lab Exam 2\app\src\main\AndroidManifest.xml:12:9-35
+27-->C:\Users\Yasindu Rasanga\Desktop\MAD Lab Exam 2\app\src\main\AndroidManifest.xml:12:9-35
 28        android:testOnly="true"
 29        android:theme="@style/Theme.MADLabExam2" >
-29-->C:\Users\Yasindu Rasanga\Documents\AndroidStudioProjects\MAD Lab Exam 2\app\src\main\AndroidManifest.xml:13:9-49
+29-->C:\Users\Yasindu Rasanga\Desktop\MAD Lab Exam 2\app\src\main\AndroidManifest.xml:13:9-49
 30        <activity
-30-->C:\Users\Yasindu Rasanga\Documents\AndroidStudioProjects\MAD Lab Exam 2\app\src\main\AndroidManifest.xml:15:9-17:40
+30-->C:\Users\Yasindu Rasanga\Desktop\MAD Lab Exam 2\app\src\main\AndroidManifest.xml:15:9-17:40
 31            android:name="com.example.madlabexam2.ticketDetailsScreen"
-31-->C:\Users\Yasindu Rasanga\Documents\AndroidStudioProjects\MAD Lab Exam 2\app\src\main\AndroidManifest.xml:16:13-48
+31-->C:\Users\Yasindu Rasanga\Desktop\MAD Lab Exam 2\app\src\main\AndroidManifest.xml:16:13-48
 32            android:exported="false" />
-32-->C:\Users\Yasindu Rasanga\Documents\AndroidStudioProjects\MAD Lab Exam 2\app\src\main\AndroidManifest.xml:17:13-37
+32-->C:\Users\Yasindu Rasanga\Desktop\MAD Lab Exam 2\app\src\main\AndroidManifest.xml:17:13-37
 33        <activity
-33-->C:\Users\Yasindu Rasanga\Documents\AndroidStudioProjects\MAD Lab Exam 2\app\src\main\AndroidManifest.xml:18:9-20:40
+33-->C:\Users\Yasindu Rasanga\Desktop\MAD Lab Exam 2\app\src\main\AndroidManifest.xml:18:9-20:40
 34            android:name="com.example.madlabexam2.cancelledBookings"
-34-->C:\Users\Yasindu Rasanga\Documents\AndroidStudioProjects\MAD Lab Exam 2\app\src\main\AndroidManifest.xml:19:13-46
+34-->C:\Users\Yasindu Rasanga\Desktop\MAD Lab Exam 2\app\src\main\AndroidManifest.xml:19:13-46
 35            android:exported="false" />
-35-->C:\Users\Yasindu Rasanga\Documents\AndroidStudioProjects\MAD Lab Exam 2\app\src\main\AndroidManifest.xml:20:13-37
+35-->C:\Users\Yasindu Rasanga\Desktop\MAD Lab Exam 2\app\src\main\AndroidManifest.xml:20:13-37
 36        <activity
-36-->C:\Users\Yasindu Rasanga\Documents\AndroidStudioProjects\MAD Lab Exam 2\app\src\main\AndroidManifest.xml:21:9-23:40
+36-->C:\Users\Yasindu Rasanga\Desktop\MAD Lab Exam 2\app\src\main\AndroidManifest.xml:21:9-23:40
 37            android:name="com.example.madlabexam2.completedBookings"
-37-->C:\Users\Yasindu Rasanga\Documents\AndroidStudioProjects\MAD Lab Exam 2\app\src\main\AndroidManifest.xml:22:13-46
+37-->C:\Users\Yasindu Rasanga\Desktop\MAD Lab Exam 2\app\src\main\AndroidManifest.xml:22:13-46
 38            android:exported="false" />
-38-->C:\Users\Yasindu Rasanga\Documents\AndroidStudioProjects\MAD Lab Exam 2\app\src\main\AndroidManifest.xml:23:13-37
+38-->C:\Users\Yasindu Rasanga\Desktop\MAD Lab Exam 2\app\src\main\AndroidManifest.xml:23:13-37
 39        <activity
-39-->C:\Users\Yasindu Rasanga\Documents\AndroidStudioProjects\MAD Lab Exam 2\app\src\main\AndroidManifest.xml:24:9-26:40
+39-->C:\Users\Yasindu Rasanga\Desktop\MAD Lab Exam 2\app\src\main\AndroidManifest.xml:24:9-26:40
 40            android:name="com.example.madlabexam2.activeBookings"
-40-->C:\Users\Yasindu Rasanga\Documents\AndroidStudioProjects\MAD Lab Exam 2\app\src\main\AndroidManifest.xml:25:13-43
+40-->C:\Users\Yasindu Rasanga\Desktop\MAD Lab Exam 2\app\src\main\AndroidManifest.xml:25:13-43
 41            android:exported="false" />
-41-->C:\Users\Yasindu Rasanga\Documents\AndroidStudioProjects\MAD Lab Exam 2\app\src\main\AndroidManifest.xml:26:13-37
+41-->C:\Users\Yasindu Rasanga\Desktop\MAD Lab Exam 2\app\src\main\AndroidManifest.xml:26:13-37
 42        <activity
-42-->C:\Users\Yasindu Rasanga\Documents\AndroidStudioProjects\MAD Lab Exam 2\app\src\main\AndroidManifest.xml:27:9-29:40
+42-->C:\Users\Yasindu Rasanga\Desktop\MAD Lab Exam 2\app\src\main\AndroidManifest.xml:27:9-29:40
 43            android:name="com.example.madlabexam2.paymentConfirmScreen"
-43-->C:\Users\Yasindu Rasanga\Documents\AndroidStudioProjects\MAD Lab Exam 2\app\src\main\AndroidManifest.xml:28:13-49
+43-->C:\Users\Yasindu Rasanga\Desktop\MAD Lab Exam 2\app\src\main\AndroidManifest.xml:28:13-49
 44            android:exported="false" />
-44-->C:\Users\Yasindu Rasanga\Documents\AndroidStudioProjects\MAD Lab Exam 2\app\src\main\AndroidManifest.xml:29:13-37
+44-->C:\Users\Yasindu Rasanga\Desktop\MAD Lab Exam 2\app\src\main\AndroidManifest.xml:29:13-37
 45        <activity
-45-->C:\Users\Yasindu Rasanga\Documents\AndroidStudioProjects\MAD Lab Exam 2\app\src\main\AndroidManifest.xml:30:9-32:40
+45-->C:\Users\Yasindu Rasanga\Desktop\MAD Lab Exam 2\app\src\main\AndroidManifest.xml:30:9-32:40
 46            android:name="com.example.madlabexam2.paymentScreen"
-46-->C:\Users\Yasindu Rasanga\Documents\AndroidStudioProjects\MAD Lab Exam 2\app\src\main\AndroidManifest.xml:31:13-42
+46-->C:\Users\Yasindu Rasanga\Desktop\MAD Lab Exam 2\app\src\main\AndroidManifest.xml:31:13-42
 47            android:exported="false" />
-47-->C:\Users\Yasindu Rasanga\Documents\AndroidStudioProjects\MAD Lab Exam 2\app\src\main\AndroidManifest.xml:32:13-37
+47-->C:\Users\Yasindu Rasanga\Desktop\MAD Lab Exam 2\app\src\main\AndroidManifest.xml:32:13-37
 48        <activity
-48-->C:\Users\Yasindu Rasanga\Documents\AndroidStudioProjects\MAD Lab Exam 2\app\src\main\AndroidManifest.xml:33:9-35:40
+48-->C:\Users\Yasindu Rasanga\Desktop\MAD Lab Exam 2\app\src\main\AndroidManifest.xml:33:9-35:40
 49            android:name="com.example.madlabexam2.locationsScreen"
-49-->C:\Users\Yasindu Rasanga\Documents\AndroidStudioProjects\MAD Lab Exam 2\app\src\main\AndroidManifest.xml:34:13-44
+49-->C:\Users\Yasindu Rasanga\Desktop\MAD Lab Exam 2\app\src\main\AndroidManifest.xml:34:13-44
 50            android:exported="false" />
-50-->C:\Users\Yasindu Rasanga\Documents\AndroidStudioProjects\MAD Lab Exam 2\app\src\main\AndroidManifest.xml:35:13-37
+50-->C:\Users\Yasindu Rasanga\Desktop\MAD Lab Exam 2\app\src\main\AndroidManifest.xml:35:13-37
 51        <activity
-51-->C:\Users\Yasindu Rasanga\Documents\AndroidStudioProjects\MAD Lab Exam 2\app\src\main\AndroidManifest.xml:36:9-38:40
+51-->C:\Users\Yasindu Rasanga\Desktop\MAD Lab Exam 2\app\src\main\AndroidManifest.xml:36:9-38:40
 52            android:name="com.example.madlabexam2.seatSelectingScreen"
-52-->C:\Users\Yasindu Rasanga\Documents\AndroidStudioProjects\MAD Lab Exam 2\app\src\main\AndroidManifest.xml:37:13-48
+52-->C:\Users\Yasindu Rasanga\Desktop\MAD Lab Exam 2\app\src\main\AndroidManifest.xml:37:13-48
 53            android:exported="false" />
-53-->C:\Users\Yasindu Rasanga\Documents\AndroidStudioProjects\MAD Lab Exam 2\app\src\main\AndroidManifest.xml:38:13-37
+53-->C:\Users\Yasindu Rasanga\Desktop\MAD Lab Exam 2\app\src\main\AndroidManifest.xml:38:13-37
 54        <activity
-54-->C:\Users\Yasindu Rasanga\Documents\AndroidStudioProjects\MAD Lab Exam 2\app\src\main\AndroidManifest.xml:39:9-41:40
+54-->C:\Users\Yasindu Rasanga\Desktop\MAD Lab Exam 2\app\src\main\AndroidManifest.xml:39:9-41:40
 55            android:name="com.example.madlabexam2.profileScreen"
-55-->C:\Users\Yasindu Rasanga\Documents\AndroidStudioProjects\MAD Lab Exam 2\app\src\main\AndroidManifest.xml:40:13-42
+55-->C:\Users\Yasindu Rasanga\Desktop\MAD Lab Exam 2\app\src\main\AndroidManifest.xml:40:13-42
 56            android:exported="false" />
-56-->C:\Users\Yasindu Rasanga\Documents\AndroidStudioProjects\MAD Lab Exam 2\app\src\main\AndroidManifest.xml:41:13-37
+56-->C:\Users\Yasindu Rasanga\Desktop\MAD Lab Exam 2\app\src\main\AndroidManifest.xml:41:13-37
 57        <activity
-57-->C:\Users\Yasindu Rasanga\Documents\AndroidStudioProjects\MAD Lab Exam 2\app\src\main\AndroidManifest.xml:42:9-44:40
+57-->C:\Users\Yasindu Rasanga\Desktop\MAD Lab Exam 2\app\src\main\AndroidManifest.xml:42:9-44:40
 58            android:name="com.example.madlabexam2.offersScreen"
-58-->C:\Users\Yasindu Rasanga\Documents\AndroidStudioProjects\MAD Lab Exam 2\app\src\main\AndroidManifest.xml:43:13-41
+58-->C:\Users\Yasindu Rasanga\Desktop\MAD Lab Exam 2\app\src\main\AndroidManifest.xml:43:13-41
 59            android:exported="false" />
-59-->C:\Users\Yasindu Rasanga\Documents\AndroidStudioProjects\MAD Lab Exam 2\app\src\main\AndroidManifest.xml:44:13-37
+59-->C:\Users\Yasindu Rasanga\Desktop\MAD Lab Exam 2\app\src\main\AndroidManifest.xml:44:13-37
 60        <activity
-60-->C:\Users\Yasindu Rasanga\Documents\AndroidStudioProjects\MAD Lab Exam 2\app\src\main\AndroidManifest.xml:45:9-47:40
+60-->C:\Users\Yasindu Rasanga\Desktop\MAD Lab Exam 2\app\src\main\AndroidManifest.xml:45:9-47:40
 61            android:name="com.example.madlabexam2.searchScreen"
-61-->C:\Users\Yasindu Rasanga\Documents\AndroidStudioProjects\MAD Lab Exam 2\app\src\main\AndroidManifest.xml:46:13-41
+61-->C:\Users\Yasindu Rasanga\Desktop\MAD Lab Exam 2\app\src\main\AndroidManifest.xml:46:13-41
 62            android:exported="false" />
-62-->C:\Users\Yasindu Rasanga\Documents\AndroidStudioProjects\MAD Lab Exam 2\app\src\main\AndroidManifest.xml:47:13-37
+62-->C:\Users\Yasindu Rasanga\Desktop\MAD Lab Exam 2\app\src\main\AndroidManifest.xml:47:13-37
 63        <activity
-63-->C:\Users\Yasindu Rasanga\Documents\AndroidStudioProjects\MAD Lab Exam 2\app\src\main\AndroidManifest.xml:48:9-50:40
+63-->C:\Users\Yasindu Rasanga\Desktop\MAD Lab Exam 2\app\src\main\AndroidManifest.xml:48:9-50:40
 64            android:name="com.example.madlabexam2.homePage"
-64-->C:\Users\Yasindu Rasanga\Documents\AndroidStudioProjects\MAD Lab Exam 2\app\src\main\AndroidManifest.xml:49:13-37
+64-->C:\Users\Yasindu Rasanga\Desktop\MAD Lab Exam 2\app\src\main\AndroidManifest.xml:49:13-37
 65            android:exported="false" />
-65-->C:\Users\Yasindu Rasanga\Documents\AndroidStudioProjects\MAD Lab Exam 2\app\src\main\AndroidManifest.xml:50:13-37
+65-->C:\Users\Yasindu Rasanga\Desktop\MAD Lab Exam 2\app\src\main\AndroidManifest.xml:50:13-37
 66        <activity
-66-->C:\Users\Yasindu Rasanga\Documents\AndroidStudioProjects\MAD Lab Exam 2\app\src\main\AndroidManifest.xml:51:9-53:40
+66-->C:\Users\Yasindu Rasanga\Desktop\MAD Lab Exam 2\app\src\main\AndroidManifest.xml:51:9-53:40
 67            android:name="com.example.madlabexam2.personalInformation"
-67-->C:\Users\Yasindu Rasanga\Documents\AndroidStudioProjects\MAD Lab Exam 2\app\src\main\AndroidManifest.xml:52:13-48
+67-->C:\Users\Yasindu Rasanga\Desktop\MAD Lab Exam 2\app\src\main\AndroidManifest.xml:52:13-48
 68            android:exported="false" />
-68-->C:\Users\Yasindu Rasanga\Documents\AndroidStudioProjects\MAD Lab Exam 2\app\src\main\AndroidManifest.xml:53:13-37
+68-->C:\Users\Yasindu Rasanga\Desktop\MAD Lab Exam 2\app\src\main\AndroidManifest.xml:53:13-37
 69        <activity
-69-->C:\Users\Yasindu Rasanga\Documents\AndroidStudioProjects\MAD Lab Exam 2\app\src\main\AndroidManifest.xml:54:9-56:40
+69-->C:\Users\Yasindu Rasanga\Desktop\MAD Lab Exam 2\app\src\main\AndroidManifest.xml:54:9-56:40
 70            android:name="com.example.madlabexam2.otpConfirmationScreen"
-70-->C:\Users\Yasindu Rasanga\Documents\AndroidStudioProjects\MAD Lab Exam 2\app\src\main\AndroidManifest.xml:55:13-50
+70-->C:\Users\Yasindu Rasanga\Desktop\MAD Lab Exam 2\app\src\main\AndroidManifest.xml:55:13-50
 71            android:exported="false" />
-71-->C:\Users\Yasindu Rasanga\Documents\AndroidStudioProjects\MAD Lab Exam 2\app\src\main\AndroidManifest.xml:56:13-37
+71-->C:\Users\Yasindu Rasanga\Desktop\MAD Lab Exam 2\app\src\main\AndroidManifest.xml:56:13-37
 72        <activity
-72-->C:\Users\Yasindu Rasanga\Documents\AndroidStudioProjects\MAD Lab Exam 2\app\src\main\AndroidManifest.xml:57:9-59:40
+72-->C:\Users\Yasindu Rasanga\Desktop\MAD Lab Exam 2\app\src\main\AndroidManifest.xml:57:9-59:40
 73            android:name="com.example.madlabexam2.otpScreen"
-73-->C:\Users\Yasindu Rasanga\Documents\AndroidStudioProjects\MAD Lab Exam 2\app\src\main\AndroidManifest.xml:58:13-38
+73-->C:\Users\Yasindu Rasanga\Desktop\MAD Lab Exam 2\app\src\main\AndroidManifest.xml:58:13-38
 74            android:exported="false" />
-74-->C:\Users\Yasindu Rasanga\Documents\AndroidStudioProjects\MAD Lab Exam 2\app\src\main\AndroidManifest.xml:59:13-37
+74-->C:\Users\Yasindu Rasanga\Desktop\MAD Lab Exam 2\app\src\main\AndroidManifest.xml:59:13-37
 75        <activity
-75-->C:\Users\Yasindu Rasanga\Documents\AndroidStudioProjects\MAD Lab Exam 2\app\src\main\AndroidManifest.xml:60:9-62:40
+75-->C:\Users\Yasindu Rasanga\Desktop\MAD Lab Exam 2\app\src\main\AndroidManifest.xml:60:9-62:40
 76            android:name="com.example.madlabexam2.signUpScreen"
-76-->C:\Users\Yasindu Rasanga\Documents\AndroidStudioProjects\MAD Lab Exam 2\app\src\main\AndroidManifest.xml:61:13-41
+76-->C:\Users\Yasindu Rasanga\Desktop\MAD Lab Exam 2\app\src\main\AndroidManifest.xml:61:13-41
 77            android:exported="false" />
-77-->C:\Users\Yasindu Rasanga\Documents\AndroidStudioProjects\MAD Lab Exam 2\app\src\main\AndroidManifest.xml:62:13-37
+77-->C:\Users\Yasindu Rasanga\Desktop\MAD Lab Exam 2\app\src\main\AndroidManifest.xml:62:13-37
 78        <activity
-78-->C:\Users\Yasindu Rasanga\Documents\AndroidStudioProjects\MAD Lab Exam 2\app\src\main\AndroidManifest.xml:63:9-65:40
+78-->C:\Users\Yasindu Rasanga\Desktop\MAD Lab Exam 2\app\src\main\AndroidManifest.xml:63:9-65:40
 79            android:name="com.example.madlabexam2.getStartedPage"
-79-->C:\Users\Yasindu Rasanga\Documents\AndroidStudioProjects\MAD Lab Exam 2\app\src\main\AndroidManifest.xml:64:13-43
+79-->C:\Users\Yasindu Rasanga\Desktop\MAD Lab Exam 2\app\src\main\AndroidManifest.xml:64:13-43
 80            android:exported="false" />
-80-->C:\Users\Yasindu Rasanga\Documents\AndroidStudioProjects\MAD Lab Exam 2\app\src\main\AndroidManifest.xml:65:13-37
+80-->C:\Users\Yasindu Rasanga\Desktop\MAD Lab Exam 2\app\src\main\AndroidManifest.xml:65:13-37
 81        <activity
-81-->C:\Users\Yasindu Rasanga\Documents\AndroidStudioProjects\MAD Lab Exam 2\app\src\main\AndroidManifest.xml:66:9-68:40
+81-->C:\Users\Yasindu Rasanga\Desktop\MAD Lab Exam 2\app\src\main\AndroidManifest.xml:66:9-68:40
 82            android:name="com.example.madlabexam2.onboardScreen4"
-82-->C:\Users\Yasindu Rasanga\Documents\AndroidStudioProjects\MAD Lab Exam 2\app\src\main\AndroidManifest.xml:67:13-43
+82-->C:\Users\Yasindu Rasanga\Desktop\MAD Lab Exam 2\app\src\main\AndroidManifest.xml:67:13-43
 83            android:exported="false" />
-83-->C:\Users\Yasindu Rasanga\Documents\AndroidStudioProjects\MAD Lab Exam 2\app\src\main\AndroidManifest.xml:68:13-37
+83-->C:\Users\Yasindu Rasanga\Desktop\MAD Lab Exam 2\app\src\main\AndroidManifest.xml:68:13-37
 84        <activity
-84-->C:\Users\Yasindu Rasanga\Documents\AndroidStudioProjects\MAD Lab Exam 2\app\src\main\AndroidManifest.xml:69:9-71:40
+84-->C:\Users\Yasindu Rasanga\Desktop\MAD Lab Exam 2\app\src\main\AndroidManifest.xml:69:9-71:40
 85            android:name="com.example.madlabexam2.onboardScreen3"
-85-->C:\Users\Yasindu Rasanga\Documents\AndroidStudioProjects\MAD Lab Exam 2\app\src\main\AndroidManifest.xml:70:13-43
+85-->C:\Users\Yasindu Rasanga\Desktop\MAD Lab Exam 2\app\src\main\AndroidManifest.xml:70:13-43
 86            android:exported="false" />
-86-->C:\Users\Yasindu Rasanga\Documents\AndroidStudioProjects\MAD Lab Exam 2\app\src\main\AndroidManifest.xml:71:13-37
+86-->C:\Users\Yasindu Rasanga\Desktop\MAD Lab Exam 2\app\src\main\AndroidManifest.xml:71:13-37
 87        <activity
-87-->C:\Users\Yasindu Rasanga\Documents\AndroidStudioProjects\MAD Lab Exam 2\app\src\main\AndroidManifest.xml:72:9-74:40
+87-->C:\Users\Yasindu Rasanga\Desktop\MAD Lab Exam 2\app\src\main\AndroidManifest.xml:72:9-74:40
 88            android:name="com.example.madlabexam2.onboardScreen2"
-88-->C:\Users\Yasindu Rasanga\Documents\AndroidStudioProjects\MAD Lab Exam 2\app\src\main\AndroidManifest.xml:73:13-43
+88-->C:\Users\Yasindu Rasanga\Desktop\MAD Lab Exam 2\app\src\main\AndroidManifest.xml:73:13-43
 89            android:exported="false" />
-89-->C:\Users\Yasindu Rasanga\Documents\AndroidStudioProjects\MAD Lab Exam 2\app\src\main\AndroidManifest.xml:74:13-37
+89-->C:\Users\Yasindu Rasanga\Desktop\MAD Lab Exam 2\app\src\main\AndroidManifest.xml:74:13-37
 90        <activity
-90-->C:\Users\Yasindu Rasanga\Documents\AndroidStudioProjects\MAD Lab Exam 2\app\src\main\AndroidManifest.xml:75:9-77:40
+90-->C:\Users\Yasindu Rasanga\Desktop\MAD Lab Exam 2\app\src\main\AndroidManifest.xml:75:9-77:40
 91            android:name="com.example.madlabexam2.onboardScreen1"
-91-->C:\Users\Yasindu Rasanga\Documents\AndroidStudioProjects\MAD Lab Exam 2\app\src\main\AndroidManifest.xml:76:13-43
+91-->C:\Users\Yasindu Rasanga\Desktop\MAD Lab Exam 2\app\src\main\AndroidManifest.xml:76:13-43
 92            android:exported="false" />
-92-->C:\Users\Yasindu Rasanga\Documents\AndroidStudioProjects\MAD Lab Exam 2\app\src\main\AndroidManifest.xml:77:13-37
+92-->C:\Users\Yasindu Rasanga\Desktop\MAD Lab Exam 2\app\src\main\AndroidManifest.xml:77:13-37
 93        <activity
-93-->C:\Users\Yasindu Rasanga\Documents\AndroidStudioProjects\MAD Lab Exam 2\app\src\main\AndroidManifest.xml:78:9-86:20
+93-->C:\Users\Yasindu Rasanga\Desktop\MAD Lab Exam 2\app\src\main\AndroidManifest.xml:78:9-86:20
 94            android:name="com.example.madlabexam2.MainActivity"
-94-->C:\Users\Yasindu Rasanga\Documents\AndroidStudioProjects\MAD Lab Exam 2\app\src\main\AndroidManifest.xml:79:13-41
+94-->C:\Users\Yasindu Rasanga\Desktop\MAD Lab Exam 2\app\src\main\AndroidManifest.xml:79:13-41
 95            android:exported="true" >
-95-->C:\Users\Yasindu Rasanga\Documents\AndroidStudioProjects\MAD Lab Exam 2\app\src\main\AndroidManifest.xml:80:13-36
+95-->C:\Users\Yasindu Rasanga\Desktop\MAD Lab Exam 2\app\src\main\AndroidManifest.xml:80:13-36
 96            <intent-filter>
-96-->C:\Users\Yasindu Rasanga\Documents\AndroidStudioProjects\MAD Lab Exam 2\app\src\main\AndroidManifest.xml:81:13-85:29
+96-->C:\Users\Yasindu Rasanga\Desktop\MAD Lab Exam 2\app\src\main\AndroidManifest.xml:81:13-85:29
 97                <action android:name="android.intent.action.MAIN" />
-97-->C:\Users\Yasindu Rasanga\Documents\AndroidStudioProjects\MAD Lab Exam 2\app\src\main\AndroidManifest.xml:82:17-69
-97-->C:\Users\Yasindu Rasanga\Documents\AndroidStudioProjects\MAD Lab Exam 2\app\src\main\AndroidManifest.xml:82:25-66
+97-->C:\Users\Yasindu Rasanga\Desktop\MAD Lab Exam 2\app\src\main\AndroidManifest.xml:82:17-69
+97-->C:\Users\Yasindu Rasanga\Desktop\MAD Lab Exam 2\app\src\main\AndroidManifest.xml:82:25-66
 98
 99                <category android:name="android.intent.category.LAUNCHER" />
-99-->C:\Users\Yasindu Rasanga\Documents\AndroidStudioProjects\MAD Lab Exam 2\app\src\main\AndroidManifest.xml:84:17-77
-99-->C:\Users\Yasindu Rasanga\Documents\AndroidStudioProjects\MAD Lab Exam 2\app\src\main\AndroidManifest.xml:84:27-74
+99-->C:\Users\Yasindu Rasanga\Desktop\MAD Lab Exam 2\app\src\main\AndroidManifest.xml:84:17-77
+99-->C:\Users\Yasindu Rasanga\Desktop\MAD Lab Exam 2\app\src\main\AndroidManifest.xml:84:27-74
 100            </intent-filter>
 101        </activity>
 102
