@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="accent">#76E462</color>
+    <color name="background">#CDF2C7</color>
+    <color name="subtext">#7A7575</color>
+    <color name="test">#eb1043</color>
+    <color name="skipColor">#D9D9D9</color>
+    <color name="containerColor">#E8F5E9</color>
+    <color name="bookedColor">#F6A0A0</color>
+    <color name="selectedColor">#DCD34F</color>
+    <color name="availableColor">#5BE22E</color>
+    <color name="navColor">#bffc86</color>
+</resources>

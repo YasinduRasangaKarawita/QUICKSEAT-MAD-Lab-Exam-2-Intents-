@@ -1,0 +1,991 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".homePage">
+
+    <LinearLayout
+        android:id="@+id/staticHome"
+        android:layout_width="match_parent"
+        android:layout_height="230dp"
+        android:background="@drawable/top_static"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="75dp"
+            android:fontFamily="@font/redhatdisplay"
+            android:text="@string/welcomeText"
+            android:textColor="@color/black"
+            android:textSize="36sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/redhatdisplay"
+            android:text="@string/dateText"
+            android:textColor="@color/black"
+            android:textSize="28sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/staticHome">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/subText"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/redhatdisplay"
+                android:text="@string/subText"
+                android:textColor="@color/subtext"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/bus1"
+                android:layout_width="382dp"
+                android:layout_height="124dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/bus_container">
+
+                <TextView
+                    android:id="@+id/remTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/redhatdisplay"
+                    android:text="@string/remTimeText1"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/remSeats"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="15dp"
+                    android:fontFamily="@font/redhatdisplay"
+                    android:text="@string/remSeatText1"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/person"
+                    android:layout_width="27dp"
+                    android:layout_height="25dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="5dp"
+                    android:src="@drawable/person"
+                    app:layout_constraintEnd_toStartOf="@+id/remSeats"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/startingLoc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/redhatdisplay"
+                    android:text="@string/startLocText1"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/remTime" />
+
+                <TextView
+                    android:id="@+id/leaveTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/redhatdisplay"
+                    android:text="@string/leaveTimeText1"
+                    android:textAlignment="center"
+                    android:textColor="@color/subtext"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="@+id/startingLoc"
+                    app:layout_constraintStart_toStartOf="@+id/startingLoc"
+                    app:layout_constraintTop_toBottomOf="@+id/startingLoc" />
+
+                <TextView
+                    android:id="@+id/destLoc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:fontFamily="@font/redhatdisplay"
+                    android:text="@string/destLocText1"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/startingLoc" />
+
+                <TextView
+                    android:id="@+id/reachTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/redhatdisplay"
+                    android:text="@string/reachTimeText1"
+                    android:textAlignment="center"
+                    android:textColor="@color/subtext"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="@+id/destLoc"
+                    app:layout_constraintStart_toStartOf="@+id/destLoc"
+                    app:layout_constraintTop_toBottomOf="@+id/destLoc" />
+
+                <ImageView
+                    android:id="@+id/arrow"
+                    android:layout_width="39dp"
+                    android:layout_height="34dp"
+                    android:src="@drawable/arrow"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.501"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/startingLoc" />
+
+                <ImageView
+                    android:id="@+id/clock"
+                    android:layout_width="29dp"
+                    android:layout_height="33dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginEnd="8dp"
+                    android:src="@drawable/clock"
+                    app:layout_constraintEnd_toStartOf="@+id/journeyTime"
+                    app:layout_constraintHorizontal_bias="0.987"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/arrow"
+                    tools:ignore="MissingConstraints" />
+
+                <TextView
+                    android:id="@+id/journeyTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="144dp"
+                    android:fontFamily="@font/redhatdisplay"
+                    android:text="@string/durationText1"
+                    android:textAlignment="center"
+                    android:textColor="@color/subtext"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/clock"
+                    tools:ignore="MissingConstraints" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/bus2"
+                android:layout_width="382dp"
+                android:layout_height="124dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/bus_container">
+
+                <TextView
+                    android:id="@+id/remTime2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/redhatdisplay"
+                    android:text="@string/remTimeText2"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/remSeats2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="15dp"
+                    android:fontFamily="@font/redhatdisplay"
+                    android:text="@string/remSeatText2"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/person2"
+                    android:layout_width="27dp"
+                    android:layout_height="25dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="5dp"
+                    android:src="@drawable/person"
+                    app:layout_constraintEnd_toStartOf="@+id/remSeats2"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/startingLoc2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/redhatdisplay"
+                    android:text="@string/startLocText2"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/remTime2" />
+
+                <TextView
+                    android:id="@+id/leaveTime2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/redhatdisplay"
+                    android:text="@string/leaveTimeText2"
+                    android:textAlignment="center"
+                    android:textColor="@color/subtext"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="@+id/startingLoc2"
+                    app:layout_constraintStart_toStartOf="@+id/startingLoc2"
+                    app:layout_constraintTop_toBottomOf="@+id/startingLoc2" />
+
+                <TextView
+                    android:id="@+id/destLoc2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:fontFamily="@font/redhatdisplay"
+                    android:text="@string/destLocText2"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/startingLoc2" />
+
+                <TextView
+                    android:id="@+id/reachTime2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/redhatdisplay"
+                    android:text="@string/reachTimeText2"
+                    android:textAlignment="center"
+                    android:textColor="@color/subtext"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="@+id/destLoc2"
+                    app:layout_constraintStart_toStartOf="@+id/destLoc2"
+                    app:layout_constraintTop_toBottomOf="@+id/destLoc2" />
+
+                <ImageView
+                    android:id="@+id/arrow2"
+                    android:layout_width="39dp"
+                    android:layout_height="34dp"
+                    android:src="@drawable/arrow"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.501"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/startingLoc2" />
+
+                <ImageView
+                    android:id="@+id/clock2"
+                    android:layout_width="29dp"
+                    android:layout_height="33dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginEnd="8dp"
+                    android:src="@drawable/clock"
+                    app:layout_constraintEnd_toStartOf="@+id/journeyTime2"
+                    app:layout_constraintHorizontal_bias="0.987"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/arrow2"
+                    tools:ignore="MissingConstraints" />
+
+                <TextView
+                    android:id="@+id/journeyTime2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="100dp"
+                    android:fontFamily="@font/redhatdisplay"
+                    android:text="@string/durationText2"
+                    android:textAlignment="center"
+                    android:textColor="@color/subtext"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/clock2"
+                    tools:ignore="MissingConstraints" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/bus3"
+                android:layout_width="382dp"
+                android:layout_height="124dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/bus_container">
+
+                <TextView
+                    android:id="@+id/remTime3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/redhatdisplay"
+                    android:text="@string/remTimeText3"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/remSeats3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="15dp"
+                    android:fontFamily="@font/redhatdisplay"
+                    android:text="@string/remSeatText3"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/person3"
+                    android:layout_width="27dp"
+                    android:layout_height="25dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="5dp"
+                    android:src="@drawable/person"
+                    app:layout_constraintEnd_toStartOf="@+id/remSeats3"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/startingLoc3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/redhatdisplay"
+                    android:text="@string/startLocText3"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/remTime3" />
+
+                <TextView
+                    android:id="@+id/leaveTime3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/redhatdisplay"
+                    android:text="@string/leaveTimeText3"
+                    android:textAlignment="center"
+                    android:textColor="@color/subtext"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="@+id/startingLoc3"
+                    app:layout_constraintStart_toStartOf="@+id/startingLoc3"
+                    app:layout_constraintTop_toBottomOf="@+id/startingLoc3" />
+
+                <TextView
+                    android:id="@+id/destLoc3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:fontFamily="@font/redhatdisplay"
+                    android:text="@string/destLocText3"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/startingLoc3" />
+
+                <TextView
+                    android:id="@+id/reachTime3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/redhatdisplay"
+                    android:text="@string/reachTimeText3"
+                    android:textAlignment="center"
+                    android:textColor="@color/subtext"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="@+id/destLoc3"
+                    app:layout_constraintStart_toStartOf="@+id/destLoc3"
+                    app:layout_constraintTop_toBottomOf="@+id/destLoc3" />
+
+                <ImageView
+                    android:id="@+id/arrow3"
+                    android:layout_width="39dp"
+                    android:layout_height="34dp"
+                    android:src="@drawable/arrow"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.501"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/startingLoc3" />
+
+                <ImageView
+                    android:id="@+id/clock3"
+                    android:layout_width="29dp"
+                    android:layout_height="33dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginEnd="8dp"
+                    android:src="@drawable/clock"
+                    app:layout_constraintEnd_toStartOf="@+id/journeyTime3"
+                    app:layout_constraintHorizontal_bias="0.987"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/arrow3"
+                    tools:ignore="MissingConstraints" />
+
+                <TextView
+                    android:id="@+id/journeyTime3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="100dp"
+                    android:fontFamily="@font/redhatdisplay"
+                    android:text="@string/durationText3"
+                    android:textAlignment="center"
+                    android:textColor="@color/subtext"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/clock3"
+                    tools:ignore="MissingConstraints" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/bus4"
+                android:layout_width="382dp"
+                android:layout_height="124dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/bus_container">
+
+                <TextView
+                    android:id="@+id/remTime4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/redhatdisplay"
+                    android:text="@string/remTimeText4"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/remSeats4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="15dp"
+                    android:fontFamily="@font/redhatdisplay"
+                    android:text="@string/remSeatText4"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/person4"
+                    android:layout_width="27dp"
+                    android:layout_height="25dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="5dp"
+                    android:src="@drawable/person"
+                    app:layout_constraintEnd_toStartOf="@+id/remSeats4"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/startingLoc4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/redhatdisplay"
+                    android:text="@string/startLocText4"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/remTime4" />
+
+                <TextView
+                    android:id="@+id/leaveTime4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/redhatdisplay"
+                    android:text="@string/leaveTimeText4"
+                    android:textAlignment="center"
+                    android:textColor="@color/subtext"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="@+id/startingLoc4"
+                    app:layout_constraintStart_toStartOf="@+id/startingLoc4"
+                    app:layout_constraintTop_toBottomOf="@+id/startingLoc4" />
+
+                <TextView
+                    android:id="@+id/destLoc4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:fontFamily="@font/redhatdisplay"
+                    android:text="@string/destLocText4"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/startingLoc4" />
+
+                <TextView
+                    android:id="@+id/reachTime4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/redhatdisplay"
+                    android:text="@string/reachTimeText4"
+                    android:textAlignment="center"
+                    android:textColor="@color/subtext"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="@+id/destLoc4"
+                    app:layout_constraintStart_toStartOf="@+id/destLoc4"
+                    app:layout_constraintTop_toBottomOf="@+id/destLoc4" />
+
+                <ImageView
+                    android:id="@+id/arrow4"
+                    android:layout_width="39dp"
+                    android:layout_height="34dp"
+                    android:src="@drawable/arrow"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.501"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/startingLoc4" />
+
+                <ImageView
+                    android:id="@+id/clock4"
+                    android:layout_width="29dp"
+                    android:layout_height="33dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginEnd="8dp"
+                    android:src="@drawable/clock"
+                    app:layout_constraintEnd_toStartOf="@+id/journeyTime4"
+                    app:layout_constraintHorizontal_bias="0.987"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/arrow4"
+                    tools:ignore="MissingConstraints" />
+
+                <TextView
+                    android:id="@+id/journeyTime4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="130dp"
+                    android:fontFamily="@font/redhatdisplay"
+                    android:text="@string/durationText4"
+                    android:textAlignment="center"
+                    android:textColor="@color/subtext"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/clock4"
+                    tools:ignore="MissingConstraints" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/bus5"
+                android:layout_width="382dp"
+                android:layout_height="124dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/bus_container">
+
+                <TextView
+                    android:id="@+id/remTime5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/redhatdisplay"
+                    android:text="@string/remTimeText5"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/remSeats5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="15dp"
+                    android:fontFamily="@font/redhatdisplay"
+                    android:text="@string/remSeatText5"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/person5"
+                    android:layout_width="27dp"
+                    android:layout_height="25dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="5dp"
+                    android:src="@drawable/person"
+                    app:layout_constraintEnd_toStartOf="@+id/remSeats5"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/startingLoc5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/redhatdisplay"
+                    android:text="@string/startLocText5"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/remTime5" />
+
+                <TextView
+                    android:id="@+id/leaveTime5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/redhatdisplay"
+                    android:text="@string/leaveTimeText5"
+                    android:textAlignment="center"
+                    android:textColor="@color/subtext"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="@+id/startingLoc5"
+                    app:layout_constraintStart_toStartOf="@+id/startingLoc5"
+                    app:layout_constraintTop_toBottomOf="@+id/startingLoc5" />
+
+                <TextView
+                    android:id="@+id/destLoc5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:fontFamily="@font/redhatdisplay"
+                    android:text="@string/destLocText5"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/startingLoc5" />
+
+                <TextView
+                    android:id="@+id/reachTime5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/redhatdisplay"
+                    android:text="@string/reachTimeText5"
+                    android:textAlignment="center"
+                    android:textColor="@color/subtext"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="@+id/destLoc5"
+                    app:layout_constraintStart_toStartOf="@+id/destLoc5"
+                    app:layout_constraintTop_toBottomOf="@+id/destLoc5" />
+
+                <ImageView
+                    android:id="@+id/arrow5"
+                    android:layout_width="39dp"
+                    android:layout_height="34dp"
+                    android:src="@drawable/arrow"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.501"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/startingLoc5" />
+
+                <ImageView
+                    android:id="@+id/clock5"
+                    android:layout_width="29dp"
+                    android:layout_height="33dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginEnd="8dp"
+                    android:src="@drawable/clock"
+                    app:layout_constraintEnd_toStartOf="@+id/journeyTime5"
+                    app:layout_constraintHorizontal_bias="0.987"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/arrow5"
+                    tools:ignore="MissingConstraints" />
+
+                <TextView
+                    android:id="@+id/journeyTime5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="144dp"
+                    android:fontFamily="@font/redhatdisplay"
+                    android:text="@string/durationText5"
+                    android:textAlignment="center"
+                    android:textColor="@color/subtext"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/clock5"
+                    tools:ignore="MissingConstraints" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/bus6"
+                android:layout_width="382dp"
+                android:layout_height="124dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="300dp"
+                android:background="@drawable/bus_container">
+
+                <TextView
+                    android:id="@+id/remTime6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/redhatdisplay"
+                    android:text="@string/remTimeText6"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/remSeats6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="15dp"
+                    android:fontFamily="@font/redhatdisplay"
+                    android:text="@string/remSeatText6"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/person6"
+                    android:layout_width="27dp"
+                    android:layout_height="25dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="5dp"
+                    android:src="@drawable/person"
+                    app:layout_constraintEnd_toStartOf="@+id/remSeats6"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/startingLoc6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/redhatdisplay"
+                    android:text="@string/startLocText6"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/remTime6" />
+
+                <TextView
+                    android:id="@+id/leaveTime6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/redhatdisplay"
+                    android:text="@string/leaveTimeText6"
+                    android:textAlignment="center"
+                    android:textColor="@color/subtext"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="@+id/startingLoc6"
+                    app:layout_constraintStart_toStartOf="@+id/startingLoc6"
+                    app:layout_constraintTop_toBottomOf="@+id/startingLoc6" />
+
+                <TextView
+                    android:id="@+id/destLoc6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:fontFamily="@font/redhatdisplay"
+                    android:text="@string/destLocText6"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/startingLoc6" />
+
+                <TextView
+                    android:id="@+id/reachTime6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/redhatdisplay"
+                    android:text="@string/reachTimeText6"
+                    android:textAlignment="center"
+                    android:textColor="@color/subtext"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="@+id/destLoc6"
+                    app:layout_constraintStart_toStartOf="@+id/destLoc6"
+                    app:layout_constraintTop_toBottomOf="@+id/destLoc6" />
+
+                <ImageView
+                    android:id="@+id/arrow6"
+                    android:layout_width="39dp"
+                    android:layout_height="34dp"
+                    android:src="@drawable/arrow"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.501"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/startingLoc6" />
+
+                <ImageView
+                    android:id="@+id/clock6"
+                    android:layout_width="29dp"
+                    android:layout_height="33dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginEnd="8dp"
+                    android:src="@drawable/clock"
+                    app:layout_constraintEnd_toStartOf="@+id/journeyTime6"
+                    app:layout_constraintHorizontal_bias="0.987"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/arrow6"
+                    tools:ignore="MissingConstraints" />
+
+                <TextView
+                    android:id="@+id/journeyTime6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="100dp"
+                    android:fontFamily="@font/redhatdisplay"
+                    android:text="@string/durationText6"
+                    android:textAlignment="center"
+                    android:textColor="@color/subtext"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/clock6"
+                    tools:ignore="MissingConstraints" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+        <LinearLayout
+            android:id="@+id/navbar"
+            android:layout_width="380dp"
+            android:layout_height="52dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/nav_bar"
+            android:gravity="center"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <ImageButton
+                android:id="@+id/homebtn"
+                android:contentDescription="home"
+                android:layout_width="95dp"
+                android:layout_height="52dp"
+                android:src="@drawable/home_icon"
+                android:background="@drawable/selected_nav"
+                />
+
+            <ImageButton
+                android:id="@+id/searchbtn"
+                android:contentDescription="search"
+                android:layout_width="95dp"
+                android:layout_height="52dp"
+                android:src="@drawable/search_icon"
+                android:background="@drawable/nav_bar" />
+
+            <ImageButton
+                android:id="@+id/offerbtn"
+                android:contentDescription="offers"
+                android:layout_width="95dp"
+                android:layout_height="52dp"
+                android:src="@drawable/offers_icon"
+                android:background="@drawable/nav_bar"/>
+
+            <ImageButton
+                android:id="@+id/profilebtn"
+                android:contentDescription="profile"
+                android:layout_width="95dp"
+                android:layout_height="52dp"
+                android:src="@drawable/profile_icon"
+                android:background="@drawable/nav_bar"/>
+        </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

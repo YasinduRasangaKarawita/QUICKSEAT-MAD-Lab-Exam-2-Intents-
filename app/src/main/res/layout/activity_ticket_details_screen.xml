@@ -1,0 +1,363 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical"
+    tools:context=".ticketDetailsScreen">
+
+    <LinearLayout
+        android:id="@+id/staticLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/top_static"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/head"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/backbtn"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="30dp"
+                android:background="@color/accent"
+                android:src="@drawable/backbtn" />
+
+            <TextView
+                android:id="@+id/titleText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="35dp"
+                android:fontFamily="@font/redhatdisplay"
+                android:text="@string/ticketText"
+                android:textColor="@color/black"
+                android:textSize="36sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:background="@drawable/bus_container">
+
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/redhatdisplay"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:text="@string/dateText"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/bus"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/date">
+
+            <TextView
+                android:id="@+id/startLoc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:fontFamily="@font/redhatdisplay"
+                android:text="@string/startLocText1"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/head"
+                tools:ignore="NotSibling" />
+
+            <TextView
+                android:id="@+id/leaveTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/redhatdisplay"
+                android:text="@string/leaveTimeText1"
+                android:textAlignment="center"
+                android:textColor="@color/subtext"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@id/startLoc"
+                app:layout_constraintStart_toStartOf="@id/startLoc"
+                app:layout_constraintTop_toBottomOf="@id/startLoc" />
+
+            <TextView
+                android:id="@+id/endLoc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="24dp"
+                android:fontFamily="@font/redhatdisplay"
+                android:text="@string/destLocText1"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@id/startLoc"
+                tools:ignore="NotSibling" />
+
+            <TextView
+                android:id="@+id/reachTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/redhatdisplay"
+                android:text="@string/reachTimeText1"
+                android:textAlignment="center"
+                android:textColor="@color/subtext"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@id/endLoc"
+                app:layout_constraintStart_toStartOf="@id/endLoc"
+                app:layout_constraintTop_toBottomOf="@id/endLoc" />
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/redhatdisplay"
+                android:text="@string/durationText1"
+                android:textAlignment="center"
+                android:textColor="@color/subtext"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.501"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.407" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TextView
+            android:id="@+id/onboardingText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="40dp"
+            android:fontFamily="@font/redhatdisplay"
+            android:text="@string/onboarding"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/bus" />
+
+        <TextView
+            android:id="@+id/startingLoc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/redhatdisplay"
+            android:textSize="16sp"
+            android:textColor="@color/subtext"
+            android:textAlignment="center"
+            android:text="@string/ticketStartLoc"
+            app:layout_constraintEnd_toEndOf="@+id/onboardingText"
+            app:layout_constraintStart_toStartOf="@+id/onboardingText"
+            app:layout_constraintTop_toBottomOf="@id/onboardingText" />
+
+        <TextView
+            android:id="@+id/destinationText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="24dp"
+            android:fontFamily="@font/redhatdisplay"
+            android:text="@string/destination"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/onboardingText" />
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/redhatdisplay"
+            android:textAlignment="center"
+            android:textColor="@color/subtext"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:text="@string/ticketDestinationLoc"
+            app:layout_constraintEnd_toEndOf="@+id/destinationText"
+            app:layout_constraintStart_toStartOf="@+id/destinationText"
+            app:layout_constraintTop_toBottomOf="@+id/destinationText" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/ticketDetails"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/startingLoc">
+
+            <TextView
+                android:id="@+id/ticketNoText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:fontFamily="@font/redhatdisplay"
+                android:text="@string/ticketNoText"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/head"
+                tools:ignore="NotSibling" />
+
+            <TextView
+                android:id="@+id/ticketNo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/redhatdisplay"
+                android:text="@string/ticketNo"
+                android:textAlignment="center"
+                android:textColor="@color/subtext"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@id/ticketNoText"
+                app:layout_constraintStart_toStartOf="@id/ticketNoText"
+                app:layout_constraintTop_toBottomOf="@id/ticketNoText" />
+
+            <TextView
+                android:id="@+id/personsText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="24dp"
+                android:fontFamily="@font/redhatdisplay"
+                android:text="@string/persons"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@id/ticketNoText"
+                tools:ignore="NotSibling" />
+
+            <TextView
+                android:id="@+id/person"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/redhatdisplay"
+                android:text="@string/personsNo"
+                android:textAlignment="center"
+                android:textColor="@color/subtext"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@id/personsText"
+                app:layout_constraintStart_toStartOf="@id/personsText"
+                app:layout_constraintTop_toBottomOf="@id/personsText" />
+
+            <TextView
+                android:id="@+id/seatNoText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:fontFamily="@font/redhatdisplay"
+                android:text="@string/SeatNoText"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@id/ticketNoText"
+                tools:ignore="NotSibling" />
+
+            <TextView
+                android:id="@+id/seatNO"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/redhatdisplay"
+                android:text="@string/SeatNo"
+                android:textAlignment="center"
+                android:textColor="@color/subtext"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@id/seatNoText"
+                app:layout_constraintStart_toStartOf="@id/seatNoText"
+                app:layout_constraintTop_toTopOf="@+id/ticketNo" />
+
+            <TextView
+                android:id="@+id/subText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/redhatdisplay"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:textAlignment="center"
+                android:text="@string/ticketsSubText"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/seatNO" />
+
+            <ImageView
+                android:id="@+id/qr"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/qr"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/subText" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <Button
+        android:id="@+id/cancelbtn"
+        android:layout_width="286dp"
+        android:layout_height="52dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/bookedColor"
+        android:fontFamily="@font/redhatdisplay"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:text="@string/cancelledTicketButton" />
+
+</LinearLayout>

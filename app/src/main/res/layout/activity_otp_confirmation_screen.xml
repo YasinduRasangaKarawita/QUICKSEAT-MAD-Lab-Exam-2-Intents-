@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background"
+    tools:context=".otpConfirmationScreen">
+
+    <TextView
+        android:id="@+id/confirmationText"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:fontFamily="@font/redhatdisplay"
+        android:textSize="24dp"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/otpConfirmText" />
+
+    <ImageView
+        android:id="@+id/otpConfirmImage"
+        android:layout_width="351dp"
+        android:layout_height="409dp"
+        android:layout_marginTop="100dp"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/confirmimg" />
+
+    <Button
+        android:id="@+id/nextButton"
+        android:layout_width="286dp"
+        android:layout_height="52dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="100dp"
+        android:backgroundTint="@color/accent"
+        android:textSize="20dp"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:fontFamily="@font/redhatdisplay"
+        android:text="@string/nextButton" />
+</LinearLayout>

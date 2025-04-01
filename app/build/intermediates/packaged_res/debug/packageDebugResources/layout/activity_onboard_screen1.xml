@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical"
+    tools:context=".onboardScreen1">
+
+    <Button
+        android:id="@+id/skipBtn"
+        android:layout_width="99dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="33dp"
+        android:layout_marginEnd="20dp"
+        android:layout_gravity="end"
+        android:backgroundTint="@color/skipColor"
+        android:textColor="@color/black"
+        android:fontFamily="@font/redhatdisplay"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:text="@string/skipButton" />
+
+    <ImageView
+        android:id="@+id/onboardImage"
+        android:layout_width="wrap_content"
+        android:layout_height="241dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="100px"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/rounded_image"
+        android:src="@drawable/onboardscreen1" />
+
+    <TextView
+        android:id="@+id/mainText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="100px"
+        android:text="@string/onboard_screen_1_MT"
+        android:textAlignment="center"
+        android:textSize="32dp"
+        android:fontFamily="@font/redhatdisplay"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/subText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="100px"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:fontFamily="@font/redhatdisplay"
+        android:textColor="@color/subtext"
+        android:textAlignment="center"
+        android:text="@string/onboard_screen_1_ST" />
+
+    <Button
+        android:id="@+id/nextButton"
+        android:layout_width="286dp"
+        android:layout_height="52dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="50dp"
+        android:fontFamily="@font/redhatdisplay"
+        android:text="@string/nextButton"
+        android:backgroundTint="@color/accent"
+        android:textSize="20dp"
+        android:textColor="@color/black"
+        android:textStyle="bold" />
+
+</LinearLayout>

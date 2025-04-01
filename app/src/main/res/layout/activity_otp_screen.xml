@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".otpScreen">
+
+    <ImageButton
+        android:id="@+id/backbtn"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="30dp"
+        android:background="@color/background"
+        android:contentDescription="backBTN"
+        android:src="@drawable/backbtn"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/signUpText"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/redhatdisplay"
+        android:text="@string/signUpScreen_MT"
+        android:textColor="@color/black"
+        android:textSize="48dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/backbtn" />
+
+    <ImageView
+        android:id="@+id/otpImage"
+        android:layout_width="430dp"
+        android:layout_height="380dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/signUpText"
+        android:src="@drawable/otpimage" />
+
+    <TextView
+        android:id="@+id/otp_ST"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/redhatdisplay"
+        android:text="@string/otpScreen_ST"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/otpImage" />
+
+    <EditText
+        android:id="@+id/num1"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="40dp"
+        android:ems="10"
+        android:fontFamily="@font/redhatdisplay"
+        android:hint="@string/hint1"
+        android:maxLength="1"
+        android:inputType="numberDecimal"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/num2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/otp_ST" />
+
+    <EditText
+        android:id="@+id/num2"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:hint="@string/hint2"
+        android:maxLength="1"
+        android:textAlignment="center"
+        android:fontFamily="@font/redhatdisplay"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toStartOf="@+id/num3"
+        app:layout_constraintStart_toEndOf="@id/num1"
+        app:layout_constraintTop_toTopOf="@id/num1" />
+
+    <EditText
+        android:id="@+id/num3"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:hint="@string/hint3"
+        android:maxLength="1"
+        android:textAlignment="center"
+        android:fontFamily="@font/redhatdisplay"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toStartOf="@id/num4"
+        app:layout_constraintStart_toEndOf="@id/num2"
+        app:layout_constraintTop_toTopOf="@+id/num2" />
+
+    <EditText
+        android:id="@+id/num4"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:hint="@string/hint4"
+        android:maxLength="1"
+        android:textAlignment="center"
+        android:fontFamily="@font/redhatdisplay"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toStartOf="@+id/num5"
+        app:layout_constraintStart_toEndOf="@id/num3"
+        app:layout_constraintTop_toTopOf="@+id/num3" />
+
+    <EditText
+        android:id="@+id/num5"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:hint="@string/hint5"
+        android:maxLength="1"
+        android:textAlignment="center"
+        android:fontFamily="@font/redhatdisplay"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/num4"
+        app:layout_constraintTop_toTopOf="@+id/num4" />
+
+    <Button
+        android:id="@+id/confirmOTPbtn"
+        android:layout_width="286dp"
+        android:layout_height="52dp"
+        android:backgroundTint="@color/accent"
+        android:textSize="20dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:fontFamily="@font/redhatdisplay"
+        android:textAlignment="center"
+        android:text="@string/confirmOTPButton"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/num5" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

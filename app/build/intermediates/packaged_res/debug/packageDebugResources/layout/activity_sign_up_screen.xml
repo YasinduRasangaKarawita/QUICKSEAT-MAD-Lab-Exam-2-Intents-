@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical"
+    tools:context=".signUpScreen">
+
+    <ImageView
+        android:id="@+id/signUpImage"
+        android:layout_width="400dp"
+        android:layout_height="400dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/signupimage" />
+
+    <TextView
+        android:id="@+id/mainText"
+        android:layout_width="300dp"
+        android:layout_height="128dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginStart="22dp"
+        android:textStyle="bold"
+        android:fontFamily="@font/redhatdisplay"
+        android:textColor="@color/black"
+        android:textSize="48dp"
+        android:text="@string/signUpScreen_MT" />
+
+    <Button
+        android:id="@+id/googleButton"
+        android:layout_width="329dp"
+        android:layout_height="54dp"
+        android:backgroundTint="@color/accent"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="40dp"
+        android:textSize="20dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:fontFamily="@font/redhatdisplay"
+        android:text="@string/googleButton" />
+
+    <Button
+        android:id="@+id/facebookButton"
+        android:layout_width="329dp"
+        android:layout_height="54dp"
+        android:backgroundTint="@color/accent"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:textSize="20dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:fontFamily="@font/redhatdisplay"
+        android:text="@string/facebookButton" />
+
+    <Button
+        android:id="@+id/appleButton"
+        android:layout_width="329dp"
+        android:layout_height="54dp"
+        android:backgroundTint="@color/accent"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:textSize="20dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:fontFamily="@font/redhatdisplay"
+        android:text="@string/appleButton" />
+</LinearLayout>
